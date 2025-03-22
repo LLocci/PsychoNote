@@ -1,5 +1,6 @@
 import { TopHeader } from "@/components/TopHeader";
 import { Card, CardContent } from "@/components/ui/card";
+import { PSYCHONOTE_FOLDER_URL } from "@/main";
 import { Link } from "react-router-dom";
 
 const folders = [
@@ -17,11 +18,9 @@ export default function HomePage() {
         <h1 className="text-primary text-2xl font-bold mb-4">My Patients</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {folders.map((folder) => (
-            <Link key={folder.id} to={`/folders/${folder.id}`}>
-              <Card className="p-4 cursor-pointer hover:bg-accent transition">
-                <CardContent className="text-muted text-lg font-light">
-                  {folder.name}
-                </CardContent>
+            <Link key={folder.id} to={`${PSYCHONOTE_FOLDER_URL}${folder.id}`}>
+              <Card className="p-4 transition">
+                <CardContent>{folder.name}</CardContent>
               </Card>
             </Link>
           ))}
