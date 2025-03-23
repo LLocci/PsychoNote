@@ -7,6 +7,9 @@ export const BottomRecorderDiv: React.FC = () => {
          fixed 
          inset-x-0 
          bottom-0
+         flex 
+         items-center 
+         justify-center
          h-40 
          p-4"
     >

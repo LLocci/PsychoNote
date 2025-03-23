@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 export const RecorderButton: React.FC = () => {
   return (
     <Button variant={"secondary"} size={"lgicon"} className="rounded-full">
-      <MicIcon size={20} />
+      <MicIcon />
     </Button>
   );
 };
