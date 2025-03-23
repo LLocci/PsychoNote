@@ -1,6 +1,6 @@
 import { TopHeader } from "@/components/TopHeader";
 import { Card, CardContent } from "@/components/ui/card";
-import { PSYCHONOTE_FOLDER_URL } from "@/main";
+import { PSYCHONOTE_FOLDER_URL } from "@/router/routes";
 import { Link } from "react-router-dom";
 
 const folders = [
